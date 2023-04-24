@@ -12,6 +12,9 @@ import Vant from 'vant'
 //引入vant样式
 import 'vant/lib/index.css'
 
+//引入lib-flexible  --是vant建议的进行设置rem基准值的工具
+import 'lib-flexible'
+
 Vue.use(Vant)
 
 Vue.config.productionTip = false
