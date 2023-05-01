@@ -97,11 +97,12 @@ export default {
            //登陆成功后跳转到我的页面
            this.$router.push('/my')
        } catch(err){
-         if(err.response.status == 400) {
-           return this.$toast.fail('手机号或者验证码错误');
-          }else{
-           return this.$toast.fail('登陆失败，稍后再试');
-          }
+         console.log(err)
+        //  if(err) {
+        //    return this.$toast.fail('手机号或者验证码错误');
+        //   }else{
+        //    return this.$toast.fail('登陆失败，稍后再试');
+        //   }
         }
        //4. 根据请求结果 后续操作
         
